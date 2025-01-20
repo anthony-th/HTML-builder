@@ -1,7 +1,9 @@
 const { stdin, stdout } = process;
 const fs = require('fs');
+const path = require('path');
+const pathDir = path.join(__dirname, 'yougoddamnright.txt');
 const create = fs.createWriteStream(
-  '02-write-file/yougoddamnright.txt',
+  pathDir,
   'utf8',
 );
 
